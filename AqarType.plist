@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>tid</key>
+		<string>1 </string>
+		<key>name</key>
+		<string>فيلا</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>2 </string>
+		<key>name</key>
+		<string>فيلا دوبلكس</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>3 </string>
+		<key>name</key>
+		<string>فيلا روف</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>4 </string>
+		<key>name</key>
+		<string>شقة</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>5 </string>
+		<key>name</key>
+		<string>عمارة</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>6 </string>
+		<key>name</key>
+		<string>شقة مفروشة</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>7 </string>
+		<key>name</key>
+		<string>أرض صغيرة</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>8 </string>
+		<key>name</key>
+		<string>أرض كبيرة</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>9 </string>
+		<key>name</key>
+		<string>استراحة</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>10</string>
+		<key>name</key>
+		<string>برج</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>11</string>
+		<key>name</key>
+		<string>حوش</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>12</string>
+		<key>name</key>
+		<string>رهن عقاري</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>13</string>
+		<key>name</key>
+		<string>شاليه</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>14</string>
+		<key>name</key>
+		<string>فندق</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>15</string>
+		<key>name</key>
+		<string>قاعة مناسبات</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>16</string>
+		<key>name</key>
+		<string>قصر</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>17</string>
+		<key>name</key>
+		<string>مجمع تجاري</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>18</string>
+		<key>name</key>
+		<string>مجمع سكني</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>19</string>
+		<key>name</key>
+		<string>محطة بنزين</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>20</string>
+		<key>name</key>
+		<string>مزرعة</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>21</string>
+		<key>name</key>
+		<string>مستشفى</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>22</string>
+		<key>name</key>
+		<string>مستودع</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>23</string>
+		<key>name</key>
+		<string>مصنع</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>24</string>
+		<key>name</key>
+		<string>ملعب</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>25</string>
+		<key>name</key>
+		<string>ورشة</string>
+	</dict>
+	<dict>
+		<key>tid</key>
+		<string>26</string>
+		<key>name</key>
+		<string>أخرى</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Oswald-Light.otf">
+            <string>Oswald-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AqarFacebookView">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="1sh-AP-AhI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXr-ri-w3g">
+                    <rect key="frame" x="15" y="5" width="42" height="42"/>
+                    <state key="normal" backgroundImage="comments.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="٢٥ تعليق" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p2g-Xu-9CK">
+                    <rect key="frame" x="57" y="5" width="298" height="42"/>
+                    <fontDescription key="fontDescription" name="Oswald-Light" family="Oswald Light" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebook_comments.png" translatesAutoresizingMaskIntoConstraints="NO" id="bh3-z6-d98">
+                    <rect key="frame" x="355" y="5" width="42" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="bh3-z6-d98" secondAttribute="height" multiplier="1:1" id="pjh-S4-LEa"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.094117647058823528" green="0.35686274509803922" blue="0.68235294117647061" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="bh3-z6-d98" firstAttribute="top" secondItem="p2g-Xu-9CK" secondAttribute="top" id="2YG-RF-EbD"/>
+                <constraint firstItem="AXr-ri-w3g" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="31U-wF-otF"/>
+                <constraint firstItem="bh3-z6-d98" firstAttribute="bottom" secondItem="AXr-ri-w3g" secondAttribute="bottom" id="4NV-WE-wH4"/>
+                <constraint firstAttribute="trailing" secondItem="bh3-z6-d98" secondAttribute="trailing" constant="3" id="CkW-xp-0Ui"/>
+                <constraint firstItem="bh3-z6-d98" firstAttribute="top" secondItem="AXr-ri-w3g" secondAttribute="top" id="G64-9B-h0L"/>
+                <constraint firstItem="bh3-z6-d98" firstAttribute="width" secondItem="AXr-ri-w3g" secondAttribute="width" id="X8l-cU-WaX"/>
+                <constraint firstItem="bh3-z6-d98" firstAttribute="leading" secondItem="p2g-Xu-9CK" secondAttribute="trailing" id="irk-Qs-n2C"/>
+                <constraint firstItem="p2g-Xu-9CK" firstAttribute="leading" secondItem="AXr-ri-w3g" secondAttribute="trailing" id="kCH-c6-a2J"/>
+                <constraint firstAttribute="bottom" secondItem="bh3-z6-d98" secondAttribute="bottom" constant="3" id="nr0-q6-I1d"/>
+                <constraint firstItem="bh3-z6-d98" firstAttribute="bottom" secondItem="p2g-Xu-9CK" secondAttribute="bottom" id="u5E-Vo-dGY"/>
+                <constraint firstItem="bh3-z6-d98" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="ua3-ik-fb6"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="comments.png" width="32" height="32"/>
+        <image name="facebook_comments.png" width="35" height="35"/>
+    </resources>
+</document>

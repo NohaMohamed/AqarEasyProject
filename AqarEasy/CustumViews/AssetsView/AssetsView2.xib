@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Oswald-Light.otf">
+            <string>Oswald-Light</string>
+            <string>Oswald-Light</string>
+            <string>Oswald-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AssetsView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="AssetsView2">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hur-Os-iKm" userLabel="BedroomView">
+                    <rect key="frame" x="0.0" y="0.0" width="79" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dho-dK-bZg">
+                            <rect key="frame" x="0.0" y="0.0" width="35" height="21"/>
+                            <fontDescription key="fontDescription" name="Oswald-Light" family="Oswald Light" pointSize="13"/>
+                            <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bedroom.png" translatesAutoresizingMaskIntoConstraints="NO" id="VRZ-VH-x9m">
+                            <rect key="frame" x="41" y="2" width="30" height="20"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="IIf-Ne-26Y"/>
+                        <constraint firstAttribute="width" constant="79" id="L29-GL-cS6"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Zc-RZ-vpy" userLabel="BathroomView">
+                    <rect key="frame" x="131" y="0.0" width="79" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XhE-jg-uMs">
+                            <rect key="frame" x="0.0" y="0.0" width="35" height="21"/>
+                            <fontDescription key="fontDescription" name="Oswald-Light" family="Oswald Light" pointSize="13"/>
+                            <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bathroom.png" translatesAutoresizingMaskIntoConstraints="NO" id="fjU-Mz-SQf">
+                            <rect key="frame" x="41" y="2" width="30" height="20"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="79" id="KTz-Tg-xdt"/>
+                        <constraint firstAttribute="height" constant="40" id="P7x-mK-RZZ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hzn-jG-gvm" userLabel="ParkingView">
+                    <rect key="frame" x="229" y="0.0" width="109" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUP-Si-WS5">
+                            <rect key="frame" x="0.0" y="0.0" width="35" height="21"/>
+                            <fontDescription key="fontDescription" name="Oswald-Light" family="Oswald Light" pointSize="13"/>
+                            <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="parking.png" translatesAutoresizingMaskIntoConstraints="NO" id="o3P-Vl-tQ5">
+                            <rect key="frame" x="41" y="2" width="30" height="20"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="109" id="3tk-Ih-AnZ"/>
+                        <constraint firstAttribute="height" constant="40" id="HcO-hr-7t7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Hur-Os-iKm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1KB-16-RtT"/>
+                <constraint firstAttribute="bottom" secondItem="Hur-Os-iKm" secondAttribute="bottom" id="Aoh-5Z-OfA"/>
+                <constraint firstAttribute="bottom" secondItem="Hzn-jG-gvm" secondAttribute="bottom" id="DXt-9v-XVD"/>
+                <constraint firstItem="Hur-Os-iKm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="HJw-U6-S7m"/>
+                <constraint firstItem="5Zc-RZ-vpy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Kti-Cn-8hd"/>
+                <constraint firstAttribute="centerY" secondItem="5Zc-RZ-vpy" secondAttribute="centerY" id="bz2-tg-rYf"/>
+                <constraint firstAttribute="centerX" secondItem="5Zc-RZ-vpy" secondAttribute="centerX" id="ej4-Hm-Vxs"/>
+                <constraint firstItem="Hzn-jG-gvm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hMH-Sv-YQE"/>
+                <constraint firstAttribute="trailing" secondItem="Hzn-jG-gvm" secondAttribute="trailing" constant="2" id="mO6-fp-mSQ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="bz2-tg-rYf"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="bathroomCountLabel" destination="XhE-jg-uMs" id="Y03-d8-YE0"/>
+                <outlet property="bedroomCoutLabel" destination="dho-dK-bZg" id="rrC-zp-Rix"/>
+                <outlet property="parkingCountLabel" destination="iUP-Si-WS5" id="hUf-qx-axL"/>
+            </connections>
+            <point key="canvasLocation" x="-1" y="-158"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bathroom.png" width="16" height="15"/>
+        <image name="bedroom.png" width="17" height="11"/>
+        <image name="parking.png" width="16" height="14"/>
+    </resources>
+</document>

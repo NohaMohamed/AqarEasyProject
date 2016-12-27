@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Oswald-Light.otf">
+            <string>Oswald-Light</string>
+            <string>Oswald-Light</string>
+            <string>Oswald-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AssetsView">
+            <connections>
+                <outlet property="bathroomCountLabel" destination="XhE-jg-uMs" id="mmD-rd-OpQ"/>
+                <outlet property="bedroomCoutLabel" destination="dho-dK-bZg" id="fyy-aJ-pCV"/>
+                <outlet property="parkingCountLabel" destination="iUP-Si-WS5" id="0pM-3d-LL6"/>
+                <outlet property="parkingImgV" destination="o3P-Vl-tQ5" id="ezW-2M-aHo"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Ozj-v8-Jfs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hur-Os-iKm" userLabel="BedroomView">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dho-dK-bZg">
+                            <rect key="frame" x="0.0" y="0.0" width="108" height="80"/>
+                            <fontDescription key="fontDescription" name="Oswald-Light" family="Oswald Light" pointSize="13"/>
+                            <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bedroom.png" translatesAutoresizingMaskIntoConstraints="NO" id="VRZ-VH-x9m">
+                            <rect key="frame" x="110" y="0.0" width="90" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="VRZ-VH-x9m" secondAttribute="height" multiplier="9:8" id="zmn-DZ-BsK"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="VRZ-VH-x9m" firstAttribute="top" secondItem="Hur-Os-iKm" secondAttribute="top" id="OVn-1v-9PB"/>
+                        <constraint firstAttribute="bottom" secondItem="dho-dK-bZg" secondAttribute="bottom" id="PBe-cI-eWT"/>
+                        <constraint firstItem="VRZ-VH-x9m" firstAttribute="leading" secondItem="dho-dK-bZg" secondAttribute="trailing" constant="2" id="ZdO-Fh-QJa"/>
+                        <constraint firstItem="dho-dK-bZg" firstAttribute="leading" secondItem="Hur-Os-iKm" secondAttribute="leading" id="g0Y-r1-LTw"/>
+                        <constraint firstAttribute="bottom" secondItem="VRZ-VH-x9m" secondAttribute="bottom" id="gcD-kl-YO2"/>
+                        <constraint firstItem="dho-dK-bZg" firstAttribute="top" secondItem="Hur-Os-iKm" secondAttribute="top" id="oTX-Dy-bND"/>
+                        <constraint firstAttribute="trailing" secondItem="VRZ-VH-x9m" secondAttribute="trailing" id="rEk-SX-Vxt"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Zc-RZ-vpy" userLabel="BathroomView">
+                    <rect key="frame" x="200" y="0.0" width="200" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XhE-jg-uMs">
+                            <rect key="frame" x="0.0" y="0.0" width="108" height="80"/>
+                            <fontDescription key="fontDescription" name="Oswald-Light" family="Oswald Light" pointSize="13"/>
+                            <color key="textColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bathroom.png" translatesAutoresizingMaskIntoConstraints="NO" id="fjU-Mz-SQf">
+                            <rect key="frame" x="110" y="0.0" width="90" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="fjU-Mz-SQf" secondAttribute="height" multiplier="9:8" id="BWg-vn-XH3"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="fjU-Mz-SQf" firstAttribute="leading" secondItem="XhE-jg-uMs" secondAttribute="trailing" constant="2" id="6kw-dQ-by7"/>
+                        <constraint firstItem="fjU-Mz-SQf" firstAttribute="top" secondItem="5Zc-RZ-vpy" secondAttribute="top" id="BgL-0z-7Lg"/>
+                        <constraint firstAttribute="bottom" secondItem="XhE-jg-uMs" secondAttribute="bottom" id="HA3-Yt-o4I"/>
+                        <constraint firstItem="fjU-Mz-SQf" firstAttribute="leading" secondItem="XhE-jg-uMs" secondAttribute="trailing" constant="2" id="SxP-iu-YhY"/>
+                        <constraint firstItem="XhE-jg-uMs" firstAttribute="top" secondItem="5Zc-RZ-vpy" secondAttribute="top" id="Uhv-wG-OF5"/>
+                        <constraint firstItem="XhE-jg-uMs" firstAttribute="leading" secondItem="5Zc-RZ-vpy" secondAttribute="leading" id="XER-fQ-rW6"/>
+                        <constraint firstAttribute="bottom" secondItem="fjU-Mz-SQf" secondAttribute="bottom" id="fDX-Uo-nJt"/>
+                        <constraint firstAttribute="trailing" secondItem="fjU-Mz-SQf" secondAttribute="trailing" id="g9p-mU-M1e"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="SxP-iu-YhY"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hzn-jG-gvm" userLabel="ParkingView">
+                    <rect key="frame" x="400" y="0.0" width="200" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUP-Si-WS5">
+                            <rect key="frame" x="0.0" y="0.0" width="108" height="80"/>
+                            <fontDescription key="fontDescription" name="Oswald-Light" family="Oswald Light" pointSize="13"/>
+                            <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parking.png" translatesAutoresizingMaskIntoConstraints="NO" id="o3P-Vl-tQ5">
+                            <rect key="frame" x="110" y="0.0" width="90" height="80"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="o3P-Vl-tQ5" secondAttribute="height" multiplier="9:8" id="Hyv-yl-sMi"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="iUP-Si-WS5" firstAttribute="leading" secondItem="Hzn-jG-gvm" secondAttribute="leading" id="7Gx-ru-w5m"/>
+                        <constraint firstAttribute="bottom" secondItem="iUP-Si-WS5" secondAttribute="bottom" id="Pby-XB-m4L"/>
+                        <constraint firstAttribute="trailing" secondItem="o3P-Vl-tQ5" secondAttribute="trailing" id="V0A-hL-ag9"/>
+                        <constraint firstAttribute="bottom" secondItem="o3P-Vl-tQ5" secondAttribute="bottom" id="eGf-Eu-5Lw"/>
+                        <constraint firstItem="iUP-Si-WS5" firstAttribute="top" secondItem="Hzn-jG-gvm" secondAttribute="top" id="rlh-mJ-IQ9"/>
+                        <constraint firstItem="o3P-Vl-tQ5" firstAttribute="top" secondItem="Hzn-jG-gvm" secondAttribute="top" id="urv-qv-biT"/>
+                        <constraint firstItem="o3P-Vl-tQ5" firstAttribute="leading" secondItem="iUP-Si-WS5" secondAttribute="trailing" constant="2" id="y3E-lf-WaV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Hzn-jG-gvm" firstAttribute="height" secondItem="Hur-Os-iKm" secondAttribute="height" id="EI0-Jo-zTf"/>
+                <constraint firstItem="Hzn-jG-gvm" firstAttribute="height" secondItem="5Zc-RZ-vpy" secondAttribute="height" id="KIY-m1-9PY"/>
+                <constraint firstItem="Hzn-jG-gvm" firstAttribute="top" secondItem="Hur-Os-iKm" secondAttribute="top" id="NQl-ie-y1h"/>
+                <constraint firstAttribute="trailing" secondItem="Hzn-jG-gvm" secondAttribute="trailing" id="Pe4-9A-Axd"/>
+                <constraint firstItem="Hzn-jG-gvm" firstAttribute="leading" secondItem="5Zc-RZ-vpy" secondAttribute="trailing" id="Tm9-WY-ScR"/>
+                <constraint firstItem="Hzn-jG-gvm" firstAttribute="width" secondItem="5Zc-RZ-vpy" secondAttribute="width" id="a0l-wP-bxL"/>
+                <constraint firstItem="Hzn-jG-gvm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="cx6-TT-aGk"/>
+                <constraint firstAttribute="bottom" secondItem="Hzn-jG-gvm" secondAttribute="bottom" id="dld-Dg-G8p"/>
+                <constraint firstItem="Hzn-jG-gvm" firstAttribute="top" secondItem="5Zc-RZ-vpy" secondAttribute="top" id="fD6-ZS-XWY"/>
+                <constraint firstItem="5Zc-RZ-vpy" firstAttribute="leading" secondItem="Hur-Os-iKm" secondAttribute="trailing" id="kvS-qv-U4v"/>
+                <constraint firstItem="Hzn-jG-gvm" firstAttribute="width" secondItem="Hur-Os-iKm" secondAttribute="width" id="moO-3h-nGH"/>
+                <constraint firstItem="Hur-Os-iKm" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yjw-JR-WFA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="103" y="-110"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bathroom.png" width="16" height="15"/>
+        <image name="bedroom.png" width="17" height="11"/>
+        <image name="parking.png" width="16" height="14"/>
+    </resources>
+</document>

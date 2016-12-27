@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Oswald-Light.otf">
+            <string>Oswald-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdvertiserView">
+            <connections>
+                <outlet property="IMGV_user" destination="yBZ-t1-bS2" id="Yss-8X-6ri"/>
+                <outlet property="LBL_advertiserName" destination="0Da-9y-k4x" id="AQU-2g-i3v"/>
+                <outlet property="view" destination="iN0-l3-epB" id="LoD-LY-WMO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="owner_pic_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="yBZ-t1-bS2">
+                    <rect key="frame" x="355" y="5" width="42" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="Txr-fm-Rb1"/>
+                        <constraint firstAttribute="height" constant="42" id="xxJ-Cl-B65"/>
+                    </constraints>
+                    <variation key="heightClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="355" y="5" width="42" height="42"/>
+                    </variation>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="215" placeholderIntrinsicHeight="19.5" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Da-9y-k4x">
+                    <rect key="frame" x="99" y="15" width="208" height="20"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="208" id="UBF-1D-Zxi"/>
+                        <constraint firstAttribute="height" constant="20" id="wU6-QB-ydX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Oswald-Light" family="Oswald Light" pointSize="14"/>
+                    <color key="textColor" red="0.89565247297286987" green="0.051412977278232574" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="0.0" y="16" width="355" height="20"/>
+                    </variation>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone_icon" translatesAutoresizingMaskIntoConstraints="NO" id="dph-cG-Ueu">
+                    <rect key="frame" x="68" y="14" width="23" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="23" id="7WM-Ov-5fq"/>
+                        <constraint firstAttribute="height" constant="23" id="9K9-Wd-SVn"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yBZ-t1-bS2" secondAttribute="trailing" constant="3" id="3PF-cv-WQw"/>
+                <constraint firstItem="0Da-9y-k4x" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="3" id="8S2-EZ-gPO"/>
+                <constraint firstItem="0Da-9y-k4x" firstAttribute="leading" secondItem="dph-cG-Ueu" secondAttribute="trailing" constant="8" id="Dld-lU-fkk"/>
+                <constraint firstItem="yBZ-t1-bS2" firstAttribute="leading" secondItem="0Da-9y-k4x" secondAttribute="trailing" constant="140" id="Eo0-Mu-ynq"/>
+                <constraint firstItem="0Da-9y-k4x" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="Gwb-VO-bV9"/>
+                <constraint firstAttribute="centerY" secondItem="yBZ-t1-bS2" secondAttribute="centerY" constant="-1" id="IVw-D4-IhA"/>
+                <constraint firstItem="0Da-9y-k4x" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-92" placeholder="YES" id="KD2-sb-xEZ">
+                    <variation key="heightClass=regular-widthClass=regular" constant="92"/>
+                </constraint>
+                <constraint firstItem="yBZ-t1-bS2" firstAttribute="leading" secondItem="dph-cG-Ueu" secondAttribute="trailing" constant="96" id="LWR-fl-psf"/>
+                <constraint firstItem="yBZ-t1-bS2" firstAttribute="leading" secondItem="0Da-9y-k4x" secondAttribute="trailing" constant="436" id="Pqt-Fe-H3h"/>
+                <constraint firstItem="dph-cG-Ueu" firstAttribute="centerY" secondItem="0Da-9y-k4x" secondAttribute="centerY" id="TaT-au-8MF"/>
+                <constraint firstAttribute="bottom" secondItem="0Da-9y-k4x" secondAttribute="bottom" constant="15" id="aSQ-5x-dM9"/>
+                <constraint firstItem="dph-cG-Ueu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="17" id="sgc-Ov-ml4"/>
+                <constraint firstItem="0Da-9y-k4x" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zFf-lM-Wlf"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="sgc-Ov-ml4"/>
+                    <exclude reference="KD2-sb-xEZ"/>
+                    <exclude reference="zFf-lM-Wlf"/>
+                    <exclude reference="Eo0-Mu-ynq"/>
+                    <exclude reference="LWR-fl-psf"/>
+                    <exclude reference="Pqt-Fe-H3h"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=regular">
+                <mask key="constraints">
+                    <exclude reference="KD2-sb-xEZ"/>
+                    <exclude reference="Pqt-Fe-H3h"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="69" y="-267"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="owner_pic_icon.png" width="35" height="35"/>
+        <image name="phone_icon" width="28" height="28"/>
+    </resources>
+</document>

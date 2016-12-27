@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AqarView">
+            <connections>
+                <outlet property="BTN_mail" destination="JDD-ps-94o" id="mKx-Tg-kWB"/>
+                <outlet property="BTN_showInfo" destination="EQ6-an-RR8" id="1cX-96-wdI"/>
+                <outlet property="_AdvertiserView" destination="qDB-wE-jkO" id="J1c-2B-bH0"/>
+                <outlet property="aqarInfoView" destination="j75-Jd-9xA" id="1CD-5R-wCi"/>
+                <outlet property="view" destination="iN0-l3-epB" id="FWl-K1-Rh8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZU-t1-GUq">
+                    <rect key="frame" x="0.0" y="540" width="600" height="60"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qDB-wE-jkO" customClass="AdvertiserView">
+                            <rect key="frame" x="54" y="0.0" width="546" height="60"/>
+                            <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQ6-an-RR8">
+                            <rect key="frame" x="54" y="0.0" width="546" height="60"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="747" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDD-ps-94o">
+                            <rect key="frame" x="15" y="14" width="39" height="32"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="39" id="NUK-ng-PKO"/>
+                                <constraint firstAttribute="height" constant="32" id="bP6-7F-641"/>
+                                <constraint firstAttribute="width" secondItem="JDD-ps-94o" secondAttribute="height" multiplier="6:5" id="cZb-Dn-tfN"/>
+                                <constraint firstAttribute="width" secondItem="JDD-ps-94o" secondAttribute="height" multiplier="25:21" id="d7z-Kv-TlO"/>
+                                <constraint firstAttribute="width" constant="39" id="eIw-Jl-s0X"/>
+                                <constraint firstAttribute="width" secondItem="JDD-ps-94o" secondAttribute="height" multiplier="31:26" id="fbn-32-a8i"/>
+                                <constraint firstAttribute="width" secondItem="JDD-ps-94o" secondAttribute="height" multiplier="21:25" id="j3A-Sh-xw4"/>
+                                <constraint firstAttribute="width" constant="39" id="yUg-ex-Pet"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="message.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="NUK-ng-PKO"/>
+                                    <exclude reference="bP6-7F-641"/>
+                                    <exclude reference="cZb-Dn-tfN"/>
+                                    <exclude reference="d7z-Kv-TlO"/>
+                                    <exclude reference="eIw-Jl-s0X"/>
+                                    <exclude reference="fbn-32-a8i"/>
+                                    <exclude reference="j3A-Sh-xw4"/>
+                                </mask>
+                            </variation>
+                            <variation key="heightClass=compact">
+                                <mask key="constraints">
+                                    <include reference="NUK-ng-PKO"/>
+                                    <include reference="bP6-7F-641"/>
+                                </mask>
+                            </variation>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="qDB-wE-jkO" firstAttribute="top" secondItem="HZU-t1-GUq" secondAttribute="top" id="5az-po-YcO">
+                            <variation key="heightClass=compact" constant="10"/>
+                        </constraint>
+                        <constraint firstItem="JDD-ps-94o" firstAttribute="leading" secondItem="qDB-wE-jkO" secondAttribute="leading" constant="-39" id="93b-kp-Bb4"/>
+                        <constraint firstAttribute="height" constant="60" id="Cvg-Dt-cZE"/>
+                        <constraint firstAttribute="height" constant="70" id="Hsu-xZ-cNV"/>
+                        <constraint firstAttribute="bottom" secondItem="EQ6-an-RR8" secondAttribute="bottom" id="Kg5-nS-QV7">
+                            <variation key="heightClass=compact" constant="-10"/>
+                        </constraint>
+                        <constraint firstItem="qDB-wE-jkO" firstAttribute="leading" secondItem="JDD-ps-94o" secondAttribute="trailing" id="MmA-RK-avb">
+                            <variation key="heightClass=compact" constant="39"/>
+                        </constraint>
+                        <constraint firstAttribute="bottom" secondItem="qDB-wE-jkO" secondAttribute="bottom" id="Onm-d1-bgG">
+                            <variation key="heightClass=compact" constant="-10"/>
+                        </constraint>
+                        <constraint firstItem="EQ6-an-RR8" firstAttribute="leading" secondItem="HZU-t1-GUq" secondAttribute="leading" constant="54" id="R5X-Ve-8Vd"/>
+                        <constraint firstAttribute="trailing" secondItem="EQ6-an-RR8" secondAttribute="trailing" id="Rre-K5-qxG"/>
+                        <constraint firstItem="EQ6-an-RR8" firstAttribute="width" secondItem="qDB-wE-jkO" secondAttribute="width" id="Tjm-wg-HLJ"/>
+                        <constraint firstAttribute="width" secondItem="HZU-t1-GUq" secondAttribute="height" multiplier="10:1" id="Udw-fo-KKR"/>
+                        <constraint firstItem="EQ6-an-RR8" firstAttribute="leading" secondItem="JDD-ps-94o" secondAttribute="trailing" id="YlC-oM-BNA">
+                            <variation key="heightClass=compact" constant="39"/>
+                        </constraint>
+                        <constraint firstAttribute="bottom" secondItem="JDD-ps-94o" secondAttribute="bottom" constant="14" id="a2A-Nc-gFp">
+                            <variation key="heightClass=compact" constant="9"/>
+                        </constraint>
+                        <constraint firstItem="qDB-wE-jkO" firstAttribute="leading" secondItem="HZU-t1-GUq" secondAttribute="leading" constant="93" id="dde-kz-eMs"/>
+                        <constraint firstAttribute="trailing" secondItem="qDB-wE-jkO" secondAttribute="trailing" id="e54-Kg-mTy"/>
+                        <constraint firstItem="EQ6-an-RR8" firstAttribute="leading" secondItem="JDD-ps-94o" secondAttribute="trailing" id="h2F-eA-HlL"/>
+                        <constraint firstItem="qDB-wE-jkO" firstAttribute="leading" secondItem="JDD-ps-94o" secondAttribute="trailing" id="hJ2-ei-pAQ">
+                            <variation key="heightClass=compact" constant="39"/>
+                        </constraint>
+                        <constraint firstItem="qDB-wE-jkO" firstAttribute="leading" secondItem="JDD-ps-94o" secondAttribute="trailing" id="jyw-f7-bxA"/>
+                        <constraint firstItem="EQ6-an-RR8" firstAttribute="top" secondItem="HZU-t1-GUq" secondAttribute="top" id="k5M-vb-cOs"/>
+                        <constraint firstItem="JDD-ps-94o" firstAttribute="top" secondItem="HZU-t1-GUq" secondAttribute="top" constant="14" id="oy0-Nf-CiX">
+                            <variation key="heightClass=compact" constant="19"/>
+                        </constraint>
+                        <constraint firstItem="qDB-wE-jkO" firstAttribute="leading" secondItem="JDD-ps-94o" secondAttribute="trailing" constant="10" id="t5O-hV-CUy"/>
+                        <constraint firstItem="JDD-ps-94o" firstAttribute="leading" secondItem="HZU-t1-GUq" secondAttribute="leading" constant="15" id="tl0-Mm-Bck"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Hsu-xZ-cNV"/>
+                            <exclude reference="Udw-fo-KKR"/>
+                            <exclude reference="Tjm-wg-HLJ"/>
+                            <exclude reference="YlC-oM-BNA"/>
+                            <exclude reference="h2F-eA-HlL"/>
+                            <exclude reference="MmA-RK-avb"/>
+                            <exclude reference="dde-kz-eMs"/>
+                            <exclude reference="hJ2-ei-pAQ"/>
+                            <exclude reference="jyw-f7-bxA"/>
+                            <exclude reference="t5O-hV-CUy"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact">
+                        <mask key="constraints">
+                            <exclude reference="Cvg-Dt-cZE"/>
+                            <exclude reference="Hsu-xZ-cNV"/>
+                            <include reference="Tjm-wg-HLJ"/>
+                            <exclude reference="dde-kz-eMs"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j75-Jd-9xA" customClass="AqarInfoView">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="539"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="HZU-t1-GUq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5fT-mP-Zoa"/>
+                <constraint firstItem="j75-Jd-9xA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8uK-Wg-7xf"/>
+                <constraint firstAttribute="bottom" secondItem="HZU-t1-GUq" secondAttribute="bottom" id="GFK-wi-TMi">
+                    <variation key="heightClass=compact" constant="0.0"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="HZU-t1-GUq" secondAttribute="trailing" id="O1t-gQ-SxR"/>
+                <constraint firstItem="j75-Jd-9xA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aFg-uc-wZE"/>
+                <constraint firstItem="HZU-t1-GUq" firstAttribute="top" secondItem="j75-Jd-9xA" secondAttribute="bottom" constant="1" id="pjW-ef-O2K">
+                    <variation key="heightClass=compact" constant="11"/>
+                </constraint>
+                <constraint firstAttribute="trailing" secondItem="j75-Jd-9xA" secondAttribute="trailing" id="xpM-uW-mKp"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="33" y="51"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="message.png" width="39" height="32"/>
+    </resources>
+</document>

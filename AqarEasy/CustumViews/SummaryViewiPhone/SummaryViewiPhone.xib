@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="DroidNaskh-Bold.ttf">
+            <string>DroidArabicNaskh-Bold</string>
+            <string>DroidArabicNaskh-Bold</string>
+            <string>DroidArabicNaskh-Bold</string>
+        </mutableArray>
+        <mutableArray key="DroidNaskh-Regular.ttf">
+            <string>DroidArabicNaskh</string>
+            <string>DroidArabicNaskh</string>
+            <string>DroidArabicNaskh</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SummaryViewiPhone">
+            <connections>
+                <outlet property="IMGV_parking" destination="JTn-Vn-RUu" id="cx6-o6-rjl"/>
+                <outlet property="LBL_area" destination="Pia-fN-QTY" id="UUP-Ua-CMZ"/>
+                <outlet property="LBL_bathroomsCount" destination="L5g-5t-UZV" id="i7u-xS-RQg"/>
+                <outlet property="LBL_bedroomsCount" destination="7DY-x0-T53" id="Atj-rq-wsS"/>
+                <outlet property="LBL_name" destination="AZW-qr-oQS" id="xe0-tl-dMN"/>
+                <outlet property="LBL_parkingCount" destination="Mye-oN-TvF" id="eCs-Pc-ueU"/>
+                <outlet property="LBL_price" destination="S5C-L5-ef7" id="J8k-Z1-BSL"/>
+                <outlet property="activityIndicator" destination="bvQ-gU-38Q" id="ta3-Rb-jML"/>
+                <outlet property="favouritebutton" destination="trj-RZ-jrK" id="mgU-sv-SIU"/>
+                <outlet property="image" destination="Mkf-e8-20i" id="44A-cj-5iY"/>
+                <outlet property="view" destination="hYm-bg-cse" id="QNQ-jT-b3S"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="hYm-bg-cse">
+            <rect key="frame" x="0.0" y="0.0" width="602" height="244"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mkf-e8-20i">
+                    <rect key="frame" x="0.0" y="0.0" width="602" height="244"/>
+                </imageView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="bvQ-gU-38Q">
+                    <rect key="frame" x="283" y="81" width="37" height="37"/>
+                    <color key="color" red="0.52156862749999999" green="0.52156862749999999" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                </activityIndicatorView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYU-Bf-znK">
+                    <rect key="frame" x="0.0" y="196" width="267" height="48"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="267" id="OjL-wV-ky1"/>
+                        <constraint firstAttribute="height" constant="48" id="ovv-6L-G7T"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="L5g-5t-UZV">
+                    <rect key="frame" x="183" y="203" width="7" height="23"/>
+                    <fontDescription key="fontDescription" name="DroidArabicNaskh" family="Droid Arabic Naskh" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bathroom.png" translatesAutoresizingMaskIntoConstraints="NO" id="UTO-5u-BBW">
+                    <rect key="frame" x="192" y="207" width="16" height="15"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Mye-oN-TvF">
+                    <rect key="frame" x="215" y="203" width="7" height="23"/>
+                    <fontDescription key="fontDescription" name="DroidArabicNaskh" family="Droid Arabic Naskh" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="parking.png" translatesAutoresizingMaskIntoConstraints="NO" id="JTn-Vn-RUu">
+                    <rect key="frame" x="224" y="208" width="16" height="14"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="trj-RZ-jrK">
+                    <rect key="frame" x="572" y="8" width="22" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22" id="go2-Pw-Una"/>
+                        <constraint firstAttribute="width" constant="22" id="v7a-ie-6mi"/>
+                    </constraints>
+                    <state key="normal" image="favorit.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="selected" image="add_favorites_highlighted.png"/>
+                    <state key="highlighted" image="add_favorites_highlighted.png"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$8745000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="S5C-L5-ef7">
+                    <rect key="frame" x="8" y="196" width="85" height="37"/>
+                    <fontDescription key="fontDescription" name="DroidArabicNaskh-Bold" family="Droid Arabic Naskh" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="385م٢" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Pia-fN-QTY">
+                    <rect key="frame" x="95" y="196" width="42" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="Ccw-Y5-Cf2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DroidArabicNaskh-Bold" family="Droid Arabic Naskh" pointSize="19"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="7DY-x0-T53">
+                    <rect key="frame" x="149" y="203" width="7" height="23"/>
+                    <fontDescription key="fontDescription" name="DroidArabicNaskh" family="Droid Arabic Naskh" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bedroom.png" translatesAutoresizingMaskIntoConstraints="NO" id="aAb-9o-11f">
+                    <rect key="frame" x="159" y="209" width="17" height="11"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="230" placeholderIntrinsicHeight="18.5" text="تركيا اسطنبول" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AZW-qr-oQS">
+                    <rect key="frame" x="8" y="222" width="252" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="252" id="hrB-FT-chL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="DroidArabicNaskh-Bold" family="Droid Arabic Naskh" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="aYU-Bf-znK" firstAttribute="leading" secondItem="hYm-bg-cse" secondAttribute="leading" id="0Sf-NZ-ala"/>
+                <constraint firstItem="Mye-oN-TvF" firstAttribute="leading" secondItem="UTO-5u-BBW" secondAttribute="trailing" constant="7" id="1NK-Pg-n0g"/>
+                <constraint firstItem="S5C-L5-ef7" firstAttribute="centerY" secondItem="Pia-fN-QTY" secondAttribute="centerY" constant="-0.25" id="1fN-9E-8ir"/>
+                <constraint firstAttribute="trailing" secondItem="Mkf-e8-20i" secondAttribute="trailing" id="4Zz-Nj-Jgo"/>
+                <constraint firstItem="AZW-qr-oQS" firstAttribute="width" secondItem="aYU-Bf-znK" secondAttribute="width" constant="-15" id="6ba-38-D38"/>
+                <constraint firstItem="trj-RZ-jrK" firstAttribute="top" secondItem="hYm-bg-cse" secondAttribute="top" constant="8" id="8y3-qj-FDN"/>
+                <constraint firstItem="L5g-5t-UZV" firstAttribute="leading" secondItem="aAb-9o-11f" secondAttribute="trailing" constant="7" id="98O-Xy-gst"/>
+                <constraint firstItem="7DY-x0-T53" firstAttribute="leading" secondItem="Pia-fN-QTY" secondAttribute="trailing" constant="12" id="98x-nS-L6v"/>
+                <constraint firstItem="Pia-fN-QTY" firstAttribute="leading" secondItem="S5C-L5-ef7" secondAttribute="trailing" constant="2" id="BYO-DI-I1M"/>
+                <constraint firstItem="Mye-oN-TvF" firstAttribute="centerY" secondItem="JTn-Vn-RUu" secondAttribute="centerY" constant="-0.5" id="BtF-OX-gWl"/>
+                <constraint firstItem="AZW-qr-oQS" firstAttribute="leading" secondItem="hYm-bg-cse" secondAttribute="leading" constant="8" id="FPa-PO-bez"/>
+                <constraint firstItem="L5g-5t-UZV" firstAttribute="centerY" secondItem="aAb-9o-11f" secondAttribute="centerY" id="JWr-nf-U24"/>
+                <constraint firstItem="aAb-9o-11f" firstAttribute="leading" secondItem="7DY-x0-T53" secondAttribute="trailing" constant="3" id="JYo-a6-YGe"/>
+                <constraint firstItem="UTO-5u-BBW" firstAttribute="leading" secondItem="L5g-5t-UZV" secondAttribute="trailing" constant="2" id="L81-cW-HML"/>
+                <constraint firstItem="S5C-L5-ef7" firstAttribute="leading" secondItem="hYm-bg-cse" secondAttribute="leading" constant="8" id="LmM-62-dba"/>
+                <constraint firstAttribute="bottom" secondItem="Mkf-e8-20i" secondAttribute="bottom" id="NID-wh-skw"/>
+                <constraint firstItem="Pia-fN-QTY" firstAttribute="centerY" secondItem="7DY-x0-T53" secondAttribute="centerY" id="UJr-ta-omd"/>
+                <constraint firstAttribute="centerY" secondItem="S5C-L5-ef7" secondAttribute="centerY" constant="-70" id="Vk1-9B-bqX"/>
+                <constraint firstItem="Mkf-e8-20i" firstAttribute="top" secondItem="hYm-bg-cse" secondAttribute="top" id="bRv-5m-Lod"/>
+                <constraint firstItem="Mye-oN-TvF" firstAttribute="centerY" secondItem="UTO-5u-BBW" secondAttribute="centerY" id="ckF-Ac-4IP"/>
+                <constraint firstItem="AZW-qr-oQS" firstAttribute="top" secondItem="JTn-Vn-RUu" secondAttribute="bottom" id="dSq-QD-eQ9"/>
+                <constraint firstItem="UTO-5u-BBW" firstAttribute="centerY" secondItem="L5g-5t-UZV" secondAttribute="centerY" id="dlR-Vr-eHd"/>
+                <constraint firstAttribute="trailing" secondItem="trj-RZ-jrK" secondAttribute="trailing" constant="8" id="eHh-1S-hfU"/>
+                <constraint firstAttribute="centerX" secondItem="bvQ-gU-38Q" secondAttribute="centerX" constant="-0.5" id="ehb-Uq-FDJ"/>
+                <constraint firstAttribute="centerY" secondItem="bvQ-gU-38Q" secondAttribute="centerY" constant="0.5" id="fNM-nd-OaS"/>
+                <constraint firstAttribute="bottom" secondItem="aYU-Bf-znK" secondAttribute="bottom" id="faE-3c-xFq"/>
+                <constraint firstItem="aAb-9o-11f" firstAttribute="centerY" secondItem="7DY-x0-T53" secondAttribute="centerY" id="i3b-iB-X6g"/>
+                <constraint firstAttribute="bottom" secondItem="S5C-L5-ef7" secondAttribute="bottom" constant="11.5" id="nL8-fy-aCs"/>
+                <constraint firstItem="Mkf-e8-20i" firstAttribute="leading" secondItem="hYm-bg-cse" secondAttribute="leading" id="vKA-xF-yyM"/>
+                <constraint firstItem="Mkf-e8-20i" firstAttribute="leading" secondItem="S5C-L5-ef7" secondAttribute="trailing" constant="-93" id="veL-58-jxL"/>
+                <constraint firstItem="JTn-Vn-RUu" firstAttribute="leading" secondItem="Mye-oN-TvF" secondAttribute="trailing" constant="2" id="za6-ps-8uJ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Vk1-9B-bqX"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="218" y="130"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="add_favorites_highlighted.png" width="20" height="20"/>
+        <image name="bathroom.png" width="16" height="15"/>
+        <image name="bedroom.png" width="17" height="11"/>
+        <image name="favorit.png" width="22" height="22"/>
+        <image name="parking.png" width="16" height="14"/>
+    </resources>
+</document>

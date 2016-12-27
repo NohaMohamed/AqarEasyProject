@@ -1,0 +1,1 @@
+../../../CADRACSwippableCell/Source/CADRACSwippableCell.h

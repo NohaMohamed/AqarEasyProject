@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>803B0CC1-9E71-4618-AE92-4B929D31A35F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AqarEasy</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1C4DB7E4467C49D408105ECB09EF0075A26C9169</key>
+		<string>https://bitbucket.org/twarudteam/aqar-easy-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AqarEasy/AqarEasy.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1C4DB7E4467C49D408105ECB09EF0075A26C9169</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/twarudteam/aqar-easy-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1C4DB7E4467C49D408105ECB09EF0075A26C9169</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1C4DB7E4467C49D408105ECB09EF0075A26C9169</string>
+			<key>IDESourceControlWCCName</key>
+			<string>aqar-easy-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="GE_SS_TWO_LIGHT.OTF">
+            <string>GESSTwoLight-Light</string>
+        </mutableArray>
+        <mutableArray key="GE_SS_TWO_MEDIUM.OTF">
+            <string>GESSTwoMedium-Medium</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AboutView">
+            <connections>
+                <outlet property="view" destination="gEh-SM-WlC" id="Udd-Wg-Iua"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gEh-SM-WlC">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="84F-kY-nGj">
+                    <rect key="frame" x="135" y="5" width="130" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="تابعونا علي" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BpP-jR-eVA">
+                            <rect key="frame" x="29" y="0.0" width="72" height="15"/>
+                            <fontDescription key="fontDescription" name="GESSTwoMedium-Medium" family="GE SS Two" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECQ-CU-TQn" userLabel="FacebookButton">
+                            <rect key="frame" x="0.0" y="40" width="50" height="50"/>
+                            <state key="normal" backgroundImage="facebook.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="facebookButton:" destination="-1" eventType="touchUpInside" id="l5U-WS-c3F"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ahv-YS-Vnk" userLabel="TwitterButton">
+                            <rect key="frame" x="80" y="40" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="l8p-I3-iLu"/>
+                                <constraint firstAttribute="width" constant="50" id="pgH-OS-0UU"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="twitter.png">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="twitterButton:" destination="-1" eventType="touchUpInside" id="9Xx-7Q-hWg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="ECQ-CU-TQn" secondAttribute="bottom" constant="10" id="0uz-JY-sXo"/>
+                        <constraint firstItem="BpP-jR-eVA" firstAttribute="top" secondItem="84F-kY-nGj" secondAttribute="top" id="9CI-Gv-tMR"/>
+                        <constraint firstItem="ECQ-CU-TQn" firstAttribute="width" secondItem="Ahv-YS-Vnk" secondAttribute="width" id="fAb-5A-COP"/>
+                        <constraint firstAttribute="bottom" secondItem="Ahv-YS-Vnk" secondAttribute="bottom" constant="10" id="h28-uK-Sjm"/>
+                        <constraint firstAttribute="centerX" secondItem="BpP-jR-eVA" secondAttribute="centerX" id="izh-J8-p1a"/>
+                        <constraint firstAttribute="height" constant="100" id="ldB-ya-X87"/>
+                        <constraint firstItem="ECQ-CU-TQn" firstAttribute="leading" secondItem="84F-kY-nGj" secondAttribute="leading" id="sem-vW-UQz"/>
+                        <constraint firstAttribute="width" constant="130" id="vkW-ha-FIV"/>
+                        <constraint firstAttribute="trailing" secondItem="Ahv-YS-Vnk" secondAttribute="trailing" id="yqD-wc-8OL"/>
+                        <constraint firstItem="Ahv-YS-Vnk" firstAttribute="height" secondItem="ECQ-CU-TQn" secondAttribute="height" id="zbT-rO-f85"/>
+                        <constraint firstItem="Ahv-YS-Vnk" firstAttribute="leading" secondItem="ECQ-CU-TQn" secondAttribute="trailing" constant="30" id="zru-0s-Fat"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uLA-v6-OA8">
+                    <rect key="frame" x="20" y="120" width="360" height="55"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="8nm-uK-wVT"/>
+                        <constraint firstAttribute="width" secondItem="uLA-v6-OA8" secondAttribute="height" multiplier="72:11" id="W0F-KP-npI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="GESSTwoLight-Light" family="GE SS Two" pointSize="18"/>
+                    <state key="normal" title="قيم التطبيق علي App Store ">
+                        <color key="titleColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="W0F-KP-npI"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="showRating:" destination="-1" eventType="touchUpInside" id="hzn-Xd-q1d"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.13725490200000001" green="0.13725490200000001" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="uLA-v6-OA8" firstAttribute="top" secondItem="84F-kY-nGj" secondAttribute="bottom" constant="15" id="2sM-My-Wiu"/>
+                <constraint firstItem="84F-kY-nGj" firstAttribute="top" secondItem="gEh-SM-WlC" secondAttribute="top" constant="5" id="8oX-JT-O4V"/>
+                <constraint firstAttribute="bottom" secondItem="uLA-v6-OA8" secondAttribute="bottom" constant="25" id="Aax-Fi-ocg"/>
+                <constraint firstAttribute="trailing" secondItem="uLA-v6-OA8" secondAttribute="trailing" constant="20" id="BIU-TQ-wAy"/>
+                <constraint firstAttribute="centerX" secondItem="84F-kY-nGj" secondAttribute="centerX" id="CIT-08-abS"/>
+                <constraint firstItem="uLA-v6-OA8" firstAttribute="leading" secondItem="gEh-SM-WlC" secondAttribute="leading" constant="20" id="jgf-WP-qEv"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Aax-Fi-ocg"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="52" y="-422"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="facebook.png" width="43" height="43"/>
+        <image name="twitter.png" width="43" height="43"/>
+    </resources>
+</document>
